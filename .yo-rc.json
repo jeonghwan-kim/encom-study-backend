@@ -1,0 +1,9 @@
+{
+  "generator-weplajs": {
+    "api.auth": "api.isAuthenticated(),",
+    "swagger.authParam": "{$ref: '#/parameters/AccessToken'},",
+    "swagger.pathNeedle": "// Path will be here",
+    "swagger.tagNeedle": "// Tags will be here",
+    "swagger.docPahNeedle": "// Swagger document path will be here"
+  }
+}
