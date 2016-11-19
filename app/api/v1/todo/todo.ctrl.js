@@ -8,14 +8,6 @@ module.exports = {
     return Promise.resolve()
         .then(() => Todo.index(options))
   },
-  show(options) {
-    return Promise.resolve()
-        .then(() => Todo.show(options))
-        .then(todo => {
-          if (!todo) return Promise.reject(errors.NotFound('todo is not found'));
-          return todo;
-        })
-  },
   create(options) {
     return Promise.resolve()
         .then(_=> Todo.create(options))

@@ -13,6 +13,6 @@ Promise.resolve()
       return Promise.resolve();
     })
     .then(msg => console.log(msg))
-    .then(() => runServer(app,  process.env.PORT || 3000))
+    .then(() => runServer(app,  process.env.PORT || 3002))
     .then(msg => console.log(msg))
     .catch(err => console.error(err));
