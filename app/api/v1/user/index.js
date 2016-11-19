@@ -16,8 +16,6 @@ router.get('/:id',
     api.http(ctrl.show));
 
 router.post('/',
-    api.isAuthenticated(),
-    api.checkParams(v.genChecker('name', e.get('NameLength'), v.lenGt(2))),
     api.http(ctrl.create));
 
 router.put('/:id',
